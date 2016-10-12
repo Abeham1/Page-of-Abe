@@ -1,0 +1,111 @@
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+	width: 330px;
+	position: relative;
+    list-style-type: none;
+	margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;	
+}
+
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+/* Float the list items side by side */
+ul.topnav li {
+	float: left;
+	display: inline;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+	font-weight: bold;
+}
+
+
+#green li a:hover {
+	background-color: #003300;
+	border-radius: 10px;
+}
+#blue li a:hover {
+	background-color: #00394d;
+	border-radius: 10px;
+}
+#red li a:hover {
+	background-color: #661400;
+	border-radius: 10px;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+	display: none;
+}
+
+div.picture{
+	margin: 0px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
+div.picture img{
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	border-style: solid;
+	boder-width: medium;
+	border-color: black;
+	border-radius: 50%;
+}
+
+div.profile {
+	position:relative;
+	margin: auto;
+	border-style: solid;
+	boder-width: medium;
+	border-color: black;
+	border-radius: 10px;
+	margin-top: 100px;
+	background: white;
+	width: 50%;
+	display:center;
+	text-align: center;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	font-size: 1.2em;
+	font-family: "comic sans ms", cursive, sans-serif;
+	
+}
+
+div.quote{
+	width: 50%;
+	display: center;
+	text-align: center;
+	margin: auto;
+	color: white;
+	
+}
+
+div.quote p{
+	font-size: 5em;
+	font-family: "comic sans ms", cursive, sans-serif;
+	
+}
+
+#fade-in{
+	opacity: 0;
+	animation: fadeIn ease-in 1;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-delay: 0.7s;
+}
+
